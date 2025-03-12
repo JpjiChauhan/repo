@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider Solitaire Deluxe® 2 – Play Now</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: linear-gradient(to right, #141e30, #243b55); 
+            color: white; 
+            text-align: center; 
+        }
+        .container { 
+            max-width: 900px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px; 
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); 
+        }
+        h1 { color: #FFD700; text-shadow: 2px 2px 5px black; }
+        p { font-size: 18px; line-height: 1.6; }
+        .cta-button { 
+            display: inline-block; 
+            background: #FFD700; 
+            color: black; 
+            padding: 14px 24px; 
+            margin: 12px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-size: 20px; 
+            font-weight: bold;
+            transition: 0.3s ease-in-out; 
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4); 
+        }
+        .cta-button:hover { 
+            background: #FFB700; 
+            transform: scale(1.05); 
+            box-shadow: 0 0 20px rgba(255, 183, 0, 0.7);
+        }
+
+        /* Attention-Grabbing Popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, #ff004c, #ff7300);
+            padding: 50px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(255, 0, 76, 0.8);
+            border-radius: 20px;
+            z-index: 1000;
+            width: 600px;
+            max-width: 90%;
+            animation: popIn 0.5s ease-in-out;
+            border: 5px solid white;
+        }
+        .popup img { 
+            width: 80px; 
+            margin-bottom: 20px; 
+        }
+        .popup h2 { 
+            font-size: 30px; 
+            margin: 10px 0; 
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px white;
+        }
+        .popup p { font-size: 20px; font-weight: bold; }
+        .popup .cta-button {
+            display: block;
+            margin: 20px auto;
+            width: 85%;
+            font-size: 22px;
+            background: #ffd700;
+            color: black;
+            padding: 15px;
+            box-shadow: 0 0 15px white;
+        }
+        .popup .cta-button:hover {
+            background: #fff;
+            color: #ff004c;
+            transform: scale(1.08);
+            box-shadow: 0 0 30px white;
+        }
+        .popup .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 10px black;
+        }
+
+        /* Attention-Grabbing Animation */
+        @keyframes popIn {
+            from { opacity: 0; transform: translate(-50%, -55%) scale(0.5); }
+            to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🕷️ Spider Solitaire Deluxe® 2</h1>
+        <p>Experience the classic Spider Solitaire card game on mobile and PC with stunning graphics, intuitive controls, and exclusive rewards!</p>
+        <p>✔️ Build same-suit sequences from <strong>King to Ace</strong></p>
+        <p>✔️ Play on <strong>Android & Windows</strong> via <strong>Google Play Games Beta</strong></p>
+        <p>✔️ Unlock <strong>exclusive rewards</strong> for a <strong>limited time</strong>!</p>
+
+        <a href="https://pepeleads.com/register" class="cta-button">🎮 Play on Android</a>
+        <a href="https://pepeleads.com/register" class="cta-button">💻 Play on PC</a>
+    </div>
+
+    <!-- Attention-Grabbing Popup -->
+    <div class="popup" id="affiliatePopup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/3125/3125713.png" alt="Money Icon">
+        <h2>🔥 Exclusive CPA Opportunity!</h2>
+        <p>Earn <strong>high commissions</strong> by promoting <strong>Spider Solitaire Deluxe® 2</strong>.<br> Limited-time offer – Join now!</p>
+        <a href="https://pepeleads.com/register" class="cta-button">🚀 Become an Affiliate</a>
+    </div>
+
+    <script>
+        // Show popup after 5 seconds
+        setTimeout(() => {
+            document.getElementById("affiliatePopup").style.display = "block";
+        }, 5000);
+
+        // Function to close popup
+        function closePopup() {
+            document.getElementById("affiliatePopup").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
